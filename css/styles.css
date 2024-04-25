@@ -14,7 +14,7 @@ body {
 
 header {
     background-color: #AFB6C9;
-    color: white;
+    color: #212A3C;
     padding: 20px 0;
 }
 
@@ -40,7 +40,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #0969DA;
     text-decoration: none;
     font-weight: bold;
 }
@@ -61,7 +61,7 @@ main h2 {
 main p {
     font-size: 1.1em;
     line-height: 1.6em;
-    color: #666;
+    color: #333;
 }
 
 main address {
@@ -69,9 +69,43 @@ main address {
     line-height: 1.6em;
 }
 
+/* Opt-in Form Styles */
+#sms-opt-in-form {
+    margin-top: 20px;
+}
+
+#sms-opt-in-form label,
+#sms-opt-in-form input,
+#sms-opt-in-form button {
+    display: block;
+    margin-top: 5px;
+}
+
+#sms-opt-in-form .opt-in {
+    margin-top: 10px;
+}
+
+#sms-opt-in-form .opt-in input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#sms-opt-in-form button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #0969DA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sms-opt-in-form button:hover {
+    background-color: #0056b3;
+}
+
 footer {
     background-color: #333;
-    color: #fff;
+    color: #FFF;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -88,5 +122,14 @@ footer p {
     nav ul li {
         display: block;
         margin: 5px 0;
+    }
+
+    /* Responsive adjustments for opt-in form */
+    #sms-opt-in-form label,
+    #sms-opt-in-form input,
+    #sms-opt-in-form button {
+        display: block;
+        width: 100%;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
     }
 }
